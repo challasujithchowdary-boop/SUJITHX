@@ -48,7 +48,7 @@ Installation
 
 
 
-Install the published package from PyPI:
+Install SUJITHX from PyPI:
 
 
 
@@ -74,7 +74,21 @@ print(sujithx.percentage(25, 100))
 
 
 
-You can also import individual utilities:
+Expected output:
+
+
+
+Hello, Developer! Welcome to SUJITHX.
+
+30
+
+20
+
+25.0
+
+
+
+Using Individual Utilities
 
 
 
@@ -102,7 +116,7 @@ print(analyze\_folder("."))
 
 
 
-Review the function documentation and choose an appropriate directory before running file-analysis tools.
+Choose the directory you want to analyze before using file-analysis utilities.
 
 
 
@@ -130,7 +144,7 @@ Developer Installation
 
 
 
-To work on the source code:
+To work on the source code, clone the GitHub repository:
 
 
 
@@ -158,7 +172,7 @@ python -m pip install -e .
 
 
 
-Replace "YOUR\_GITHUB\_REPOSITORY\_URL" with the actual URL of the SUJITHX GitHub repository.
+Replace "YOUR\_GITHUB\_REPOSITORY\_URL" with the actual URL of your SUJITHX GitHub repository.
 
 
 
