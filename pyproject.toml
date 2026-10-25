@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sujithx"
+version = "0.1.0"
+description = "A multipurpose Python toolkit for files, security, automation, and system utilities"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+    {name = "Sujith"}
+]
+dependencies = []
+
+[project.scripts]
+sujithx = "sujithx.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sujithx*"]

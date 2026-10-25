@@ -1,0 +1,2 @@
+[console_scripts]
+sujithx = sujithx.cli:main

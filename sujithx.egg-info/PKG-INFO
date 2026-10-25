@@ -1,0 +1,169 @@
+Metadata-Version: 2.4
+Name: sujithx
+Version: 0.1.0
+Summary: A multipurpose Python toolkit for files, security, automation, and system utilities
+Author: Sujith
+License-Expression: MIT
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+SUJITHX — The Ultimate Python Toolkit
+
+
+
+SUJITHX is a modular Python toolkit that combines file management, security utilities, automation, terminal styling, logging, system information, and network checks in one command-line application.
+
+
+
+Features
+
+
+
+\- File Intelligence: Search files, analyze folders, identify duplicates, and find large files.
+
+\- Security Utilities: Generate random tokens and passwords, calculate SHA-256 hashes, and perform basic password-strength checks.
+
+\- Automation: Create directories, inspect files, read text, and copy files safely without overwriting by default.
+
+\- Terminal Styling: Colored messages, banners, and progress bars.
+
+\- Logging: Write structured log messages to the console and log files.
+
+\- System Information: Inspect Python, operating system, and disk usage information.
+
+\- Network Utilities: Retrieve hostname and local IP information and check internet connectivity.
+
+\- Command Center: Access the tools through an interactive menu.
+
+
+
+Requirements
+
+
+
+\- Python 3.12 or newer
+
+\- Windows, macOS, or Linux
+
+\- No third-party runtime dependencies
+
+
+
+Installation
+
+
+
+Clone the repository, enter its folder, and install it in editable mode:
+
+
+
+git clone YOUR\_GITHUB\_REPOSITORY\_URL
+
+cd SUJITHX
+
+python -m venv .venv
+
+
+
+Activate the environment on Windows:
+
+
+
+.venv\\Scripts\\activate
+
+
+
+Install SUJITHX:
+
+
+
+python -m pip install -e .
+
+
+
+Run
+
+
+
+Launch the command center:
+
+
+
+python -m sujithx.cli
+
+
+
+After installation, you can also run:
+
+
+
+sujithx
+
+
+
+Example
+
+
+
+from sujithx import (
+
+&#x20;   hello,
+
+&#x20;   generate\_token,
+
+&#x20;   analyze\_folder,
+
+)
+
+
+
+print(hello("Developer"))
+
+print(generate\_token())
+
+print(analyze\_folder("."))
+
+
+
+Security Notes
+
+
+
+\- Tokens and passwords are generated using Python's "secrets" module.
+
+\- SHA-256 functions calculate file or text hashes; they do not encrypt data.
+
+\- The password-strength checker is a basic heuristic, not a complete security assessment.
+
+\- Review file paths before running file operations.
+
+\- Keep generated passwords and tokens private.
+
+
+
+Project Status
+
+
+
+Version: 0.1.0
+
+
+
+This project is under active development. Contributions, suggestions, and bug reports are welcome.
+
+
+
+Author
+
+
+
+Sujith
+
+
+
+License
+
+
+
+MIT License.
+
