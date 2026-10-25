@@ -1,8 +1,12 @@
-SUJITHX — The Ultimate Python Toolkit
+SUJITHX — Python Utility Toolkit
 
 
 
-SUJITHX is a modular Python toolkit that combines file management, security utilities, automation, terminal styling, logging, system information, and network checks in one command-line application.
+A modular, lightweight Python toolkit for file management, security utilities, automation, terminal styling, logging, system information, and network checks.
+
+
+
+Build useful things with Python. Keep everyday utilities in one toolkit.
 
 
 
@@ -10,11 +14,11 @@ Features
 
 
 
-\- File Intelligence: Search files, analyze folders, identify duplicates, and find large files.
+\- File Intelligence: Search files, analyze folders, identify duplicate files, and find large files.
 
-\- Security Utilities: Generate random tokens and passwords, calculate SHA-256 hashes, and perform basic password-strength checks.
+\- Security Utilities: Generate secure random tokens and passwords, calculate SHA-256 hashes, and perform basic password-strength checks.
 
-\- Automation: Create directories, inspect files, read text, and copy files safely without overwriting by default.
+\- File Automation: Create directories, inspect files, read text, and copy files without overwriting by default.
 
 \- Terminal Styling: Colored messages, banners, and progress bars.
 
@@ -24,7 +28,7 @@ Features
 
 \- Network Utilities: Retrieve hostname and local IP information and check internet connectivity.
 
-\- Command Center: Access the tools through an interactive menu.
+\- Interactive Command Center: Access utilities through a command-line menu.
 
 
 
@@ -44,7 +48,89 @@ Installation
 
 
 
-Clone the repository, enter its folder, and install it in editable mode:
+Install the published package from PyPI:
+
+
+
+python -m pip install sujithx
+
+
+
+Quick Start
+
+
+
+import sujithx
+
+
+
+print(sujithx.hello("Developer"))
+
+print(sujithx.add(10, 20))
+
+print(sujithx.multiply(5, 4))
+
+print(sujithx.percentage(25, 100))
+
+
+
+You can also import individual utilities:
+
+
+
+from sujithx import (
+
+&#x20;   generate\_token,
+
+&#x20;   generate\_password,
+
+&#x20;   sha256\_text,
+
+&#x20;   analyze\_folder,
+
+)
+
+
+
+print(generate\_token())
+
+print(generate\_password())
+
+print(sha256\_text("Hello SUJITHX"))
+
+print(analyze\_folder("."))
+
+
+
+Review the function documentation and choose an appropriate directory before running file-analysis tools.
+
+
+
+Launch the Command Center
+
+
+
+Run the interactive menu:
+
+
+
+sujithx
+
+
+
+Alternatively:
+
+
+
+python -m sujithx.cli
+
+
+
+Developer Installation
+
+
+
+To work on the source code:
 
 
 
@@ -64,7 +150,7 @@ Activate the environment on Windows:
 
 
 
-Install SUJITHX:
+Install the project in editable mode:
 
 
 
@@ -72,47 +158,7 @@ python -m pip install -e .
 
 
 
-Run
-
-
-
-Launch the command center:
-
-
-
-python -m sujithx.cli
-
-
-
-After installation, you can also run:
-
-
-
-sujithx
-
-
-
-Example
-
-
-
-from sujithx import (
-
-&#x20;   hello,
-
-&#x20;   generate\_token,
-
-&#x20;   analyze\_folder,
-
-)
-
-
-
-print(hello("Developer"))
-
-print(generate\_token())
-
-print(analyze\_folder("."))
+Replace "YOUR\_GITHUB\_REPOSITORY\_URL" with the actual URL of the SUJITHX GitHub repository.
 
 
 
@@ -120,11 +166,11 @@ Security Notes
 
 
 
-\- Tokens and passwords are generated using Python's "secrets" module.
+\- Random tokens and passwords use Python's "secrets" module.
 
-\- SHA-256 functions calculate file or text hashes; they do not encrypt data.
+\- SHA-256 calculates hashes; it does not encrypt data.
 
-\- The password-strength checker is a basic heuristic, not a complete security assessment.
+\- The password-strength checker is a basic heuristic, not a comprehensive security assessment.
 
 \- Review file paths before running file operations.
 
@@ -136,11 +182,17 @@ Project Status
 
 
 
-Version: 0.1.0
+\- Package: "sujithx"
+
+\- Version: 0.1.0
+
+\- License: MIT
+
+\- Status: Initial public release
 
 
 
-This project is under active development. Contributions, suggestions, and bug reports are welcome.
+Contributions, suggestions, and bug reports are welcome.
 
 
 
@@ -156,5 +208,5 @@ License
 
 
 
-MIT License.
+This project is licensed under the MIT License. See the "LICENSE" file for details.
 
